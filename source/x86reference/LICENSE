@@ -1,0 +1,14 @@
+License
+
+The license is here not to restrict regular use of the reference. All I want is to keep control over its development.
+
+1. If you improve this reference, whether its source files (XML, DTD, XSL transformations) or any of derived files (in any format), 
+   send these files to the author. The author reserve the right to use these files for any purpose.
+
+2. You can publish source or any derivative files in any form only with author's permission and under the following conditions:
+
+  Mention the name of the author (Karel Lejska a.k.a. MazeGen)
+  Mention this hypertext reference to the source: ref.x86asm.net
+  Mention this license agreement
+
+3. You can't sell printed copies of any files (original or derived) of this reference, including cases when it is a part of other project.

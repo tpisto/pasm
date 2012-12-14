@@ -1,0 +1,73 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+  <link rel="stylesheet" type="text/css" href="js/codemirror/codemirror.css"></link>
+  <link rel="stylesheet" type="text/css" href="js/codemirror/theme/monokai.css"></link>
+</head>
+<body>
+  <div id="details">
+    <div class="prefix details-table byte-table">
+      <span class="table-header">Prefix</span>
+      <table class="prefix-table">
+      </table>
+    </div>        
+    <div class="prefix-rex details-table bit-table">
+      <span class="table-header">REX prefix Byte</span>
+      <table class="rex-table">
+        <tr class="inner-header"><td colspan="4">REX</td><td>W</td><td>R</td><td>X</td><td>B</td></tr>
+        <tr><td>0</td><td>1</td><td>0</td><td>0</td>
+          <td class="rex-w">0</td>
+          <td class="rex-r">0</td>
+          <td class="rex-x">0</td>
+          <td class="rex-b">0</td>
+        </tr>
+      </table>
+    </div>
+    <div class="opcode details-table byte-table">
+      <span class="table-header">Opcode</span>
+      <table class="opcode-table">
+      </table>
+    </div>
+    <div class="modrm details-table bit-table">
+      <span class="table-header">modRM Byte</span>
+      <table class="modrm-table">
+        <tr class="inner-header"><td colspan="2">mod</td><td colspan="3">reg</td><td colspan="3">r/m</td></tr>
+        <tr class="modrm-tr"></tr>
+      </table>
+    </div>
+    <div class="sib details-table bit-table">
+      <span class="table-header">SIB Byte</span>
+      <table class="sib-table">
+        <tr class="inner-header"><td colspan="2">scale</td><td colspan="3">index</td><td colspan="3">base</td></tr>
+        <tr class="sib-tr"></tr>
+      </table>
+    </div>
+    <div class="imm details-table byte-table">
+      <span class="table-header">Immediate</span>
+      <table class="imm-table">
+      </table>
+    </div>    
+    <div class="disp details-table byte-table">
+      <span class="table-header">Displacement</span>
+      <table class="disp-table">
+      </table>
+    </div>    
+
+  </div>
+  <div style="clear: both;"></div>
+  <div id="error"></div>  
+  <div class="section">
+    <textarea class="asm" name="asm" id="asm" rows="40">
+[bits 64]
+mov rax,[rdx+0x21]
+int 0x21
+</textarea>
+  </div>
+  <div id="bytecode" class="section"></div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
+  <script type="text/javascript" src="site.js"></script>
+  <script type="text/javascript" src="../pasm.min.js"></script>
+  <script type="text/javascript" src="js/codemirror/codemirror.js"></script>
+</body>
+</html>

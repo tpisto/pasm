@@ -1,0 +1,32 @@
+; name: Direct memory operations MOV, ADD, SUB (like mov byte [0x77],0xF)
+; code: "C646770FC60677000FC70677000F0066C70677000F00000066812E770077665500668106770077665500C64443770FC640770FC6000FC605770000000F66C705770000000F00C705770000000F000000812D77000000776655008105770000007766550067C64443770F67C640770F67C6000FC64443770FC640770FC6000FC60425770000000F66C70425770000000F00C70425770000000F00000048C70425770000000F00000048812C257700000077665500488104257700000077665500"
+
+[bits 16]
+mov byte [bp+0x77],0xF
+mov byte [0x77],0xF
+mov word [0x77],0xF
+mov dword [0x77],0xF
+sub dword [0x77],0x556677
+add dword [0x77],0x556677
+[bits 32]
+mov byte [eax*2+ebx+0x77],0xF
+mov byte [eax+0x77],0xF
+mov byte [eax],0xF
+mov byte [0x77],0xF
+mov word [0x77],0xF
+mov dword [0x77],0xF
+sub dword [0x77],0x556677
+add dword [0x77],0x556677
+[bits 64]
+mov byte [eax*2+ebx+0x77],0xF
+mov byte [eax+0x77],0xF
+mov byte [eax],0xF
+mov byte [rax*2+rbx+0x77],0xF
+mov byte [rax+0x77],0xF
+mov byte [rax],0xF
+mov byte [0x77],0xF
+mov word [0x77],0xF
+mov dword [0x77],0xF
+mov qword [0x77],0xF
+sub qword [0x77],0x556677
+add qword [0x77],0x556677

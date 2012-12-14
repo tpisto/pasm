@@ -1,0 +1,170 @@
+body {
+  margin-right: 40px;
+}
+
+.section {
+  float: left;
+  width: 50%;
+}
+.activeline {
+  background: #444 !important;
+}
+.byte {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: inline;
+}
+.highlight-byte{
+  background-color: #99ff99;
+}
+#error {
+  width: 100%;
+  height: 50px;
+  font-size: 12px;
+  font-family: monospace;
+  padding: 12px;
+  border: 1px solid #aaa;
+  background-color: #fee;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+#bytecode {
+  font-family: monospace;
+  width: 386px;
+  margin-right: 12px;
+  margin-left: 24px;
+}
+
+#details {
+  width: 100%;
+  font-family: monospace;  
+  padding: 12px;
+  height: 100px;
+  margin-top: -12px;
+
+  border: 1px solid #eee;
+  background-color: #eee;
+}
+
+.details-table {
+  float: left;
+  margin-right: 12px;  
+}
+
+.table-header {
+  display: block;
+  font-size: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-family: Arial;
+}
+
+.inner-header {
+  font-size: 10px;
+  font-family: Arial;
+}
+
+table {
+  margin: 0px;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px #777;
+  background-color: white;
+}
+
+table td {
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+.byte-table td:nth-child(odd) {
+  border-right: 0px;  
+}
+.byte-table td:nth-child(even) {
+  border-left: 0px;  
+}
+.byte-table tr:not(.inner-header) td:nth-child(4n+1) {
+  background-color: #efefef
+}
+.byte-table tr:not(.inner-header) td:nth-child(4n+2) {
+  background-color: #efefef
+}
+.byte-table table {
+  border: 2px solid #595;  
+}
+.bit-table table {
+  border: 2px solid #55f;  
+}
+
+/* First four, REX */
+.prefix-rex tr:not(.inner-header) td:nth-child(1) {
+  background-color: #aee
+}
+.prefix-rex tr:not(.inner-header) td:nth-child(2) {
+  background-color: #aee
+}
+.prefix-rex tr:not(.inner-header) td:nth-child(3) {
+  background-color: #aee
+}
+.prefix-rex tr:not(.inner-header) td:nth-child(4) {
+  background-color: #aee
+}
+.prefix-rex tr:not(.inner-header) td:nth-child(2n+5) {
+  background-color: #eee
+}
+.prefix-rex tr:not(.inner-header) td:nth-child(2n+6) {
+  background-color: #ddd
+}
+
+/* Modrm */
+.modrm tr:not(.inner-header) td:nth-child(1) {
+  background-color: #aee
+}
+.modrm tr:not(.inner-header) td:nth-child(2) {
+  background-color: #aee
+}
+.modrm tr:not(.inner-header) td:nth-child(3) {
+  background-color: #e0ffff
+}
+.modrm tr:not(.inner-header) td:nth-child(4) {
+  background-color: #e0ffff
+}
+.modrm tr:not(.inner-header) td:nth-child(5) {
+  background-color: #e0ffff
+}
+.modrm tr:not(.inner-header) td:nth-child(6) {
+  background-color: #e0ffe0
+}
+.modrm tr:not(.inner-header) td:nth-child(7) {
+  background-color: #e0ffe0
+}
+.modrm tr:not(.inner-header) td:nth-child(8) {
+  background-color: #e0ffe0
+}
+
+/* Sib */
+.sib tr:not(.inner-header) td:nth-child(1) {
+  background-color: #aee
+}
+.sib tr:not(.inner-header) td:nth-child(2) {
+  background-color: #aee
+}
+.sib tr:not(.inner-header) td:nth-child(3) {
+  background-color: #e0ffff
+}
+.sib tr:not(.inner-header) td:nth-child(4) {
+  background-color: #e0ffff
+}
+.sib tr:not(.inner-header) td:nth-child(5) {
+  background-color: #e0ffff
+}
+.sib tr:not(.inner-header) td:nth-child(6) {
+  background-color: #e0ffe0
+}
+.sib tr:not(.inner-header) td:nth-child(7) {
+  background-color: #e0ffe0
+}
+.sib tr:not(.inner-header) td:nth-child(8) {
+  background-color: #e0ffe0
+}

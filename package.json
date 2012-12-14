@@ -1,0 +1,47 @@
+{
+  "name": "pasm",
+  "description": "Piston X86-64 Assembler",
+  "keywords": [
+    "assembler",
+    "amd64",
+    "X86-64",
+    "bytecode",
+    "coffeescript",
+    "compiler"
+  ],
+  "author": {
+    "name": "Tommi Pisto",
+    "email": "tommi@pis.to"
+  },
+  "version": "0.0.1",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/tpisto/pasm/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "directories": {
+    "lib": "./lib/pasm"
+  },
+  "main": "./lib/pasm/pasm",
+  "bin": {
+    "pasm": "./bin/pasm"
+  },
+  "homepage": "http://pasm.pis.to",
+  "bugs": "https://github.com/tpisto/pasm/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tpisto/pasm.git"
+  },
+  "devDependencies": {
+    "uglify-js": ">=1.0.0",
+    "jison": ">=0.2.0",
+    "coffee-script": "1.4.0"
+  },
+  "readme": "Javascript X86-64 Assembler",
+  "_id": "pasm@0.0.1",
+  "_from": "pasm@0.0.1"
+}
