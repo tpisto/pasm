@@ -5,16 +5,29 @@ var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var parser = require(lib + '/pasm/pasm.js').parser;
 var arg = process.argv.splice(2);
 
-var input = fs.readFileSync(arg[0],'utf-8');
-var res = parser.parse(input);
+// Check that input file given
+var fileName = arg[0];
 
-// Get filename
-fn = arg[0].split('.');
-fileName = fn[0];
+// Trim input
+if(typeof fileName !== 'undefined') { fileName.replace(' ',''); }
+if(typeof fileName === 'undefined') {
+  console.log('Please give filename. Example: pasm simple.asm');
+} else {
+  if(fs.existsSync(fileName)) {
+    var input = fs.readFileSync(fileName,'utf-8');
+    var res = parser.parse(input);
 
-// Write binary file
-var buff = new Buffer(res.data, 'hex');
-fs.writeFile(fileName, buff, function (err) {
-  if (err) throw err;
-  console.log('Wrote ' + buff.length + " byte" + (buff.length > 1 ? 's' : '') + ' to \'' + fileName + '\'.' );
-});
+    // Get filename
+    fn = fileName.split('.');
+    fileName = fn[0];
+
+    // Write binary file
+    var buff = new Buffer(res.data, 'hex');
+    fs.writeFile(fileName, buff, function (err) {
+      if (err) throw err;
+      console.log('Wrote ' + buff.length + " byte" + (buff.length > 1 ? 's' : '') + ' to \'' + fileName + '\'.' );
+    });
+  } else {
+    console.log('File \'' + fileName + '\' does not exist.');
+  }
+}
