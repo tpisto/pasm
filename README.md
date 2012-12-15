@@ -1,6 +1,6 @@
 # Piston X86-64 Assembler
 
-Piston X86-64 Assembler (PASM) is NASM syntax based symbolic machine code compiler for X86-64 architecture - fully working in browser and in Node.js based environments. [Test live demo](http://pasm.pis.to)
+Piston X86-64 Assembler (PASM) is NASM syntax based symbolic machine code compiler for X86-64 architecture - fully working in browser and in Node.js based environments. [Test live demo](http://pasm.pis.to#test)
 
 ## Features
 
