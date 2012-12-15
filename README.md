@@ -15,8 +15,8 @@ testing framework
 
 ## Todo
 
-It works          <-- We are here
-Floating point instructions, rep, segment prefixes, MMX, ...
+* It works          <-- We are here
+* Floating point instructions, rep, segment prefixes, MMX, ...
 
 ## Download and install
 
