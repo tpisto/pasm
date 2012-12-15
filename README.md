@@ -4,14 +4,14 @@ Piston X86-64 Assembler (PASM) is NASM syntax based symbolic machine code compil
 
 ## Features
 
-X86-64 opcodes
-NASM syntax
-16,32,64 bit modes
-R8-R13 registers
-SIB, MODR/M, RIP addressing
-EQU, TIMES
-labels, expressions
-testing framework
+* X86-64 opcodes
+* NASM syntax
+* 16,32,64 bit modes
+* R8-R13 registers
+* SIB, MODR/M, RIP addressing
+* EQU, TIMES
+* labels, expressions
+* testing framework
 
 ## Todo
 
