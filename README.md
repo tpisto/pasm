@@ -49,7 +49,7 @@ So far its been tested in FF12, Chrome 23 and Safari 6. Usage:
 
     // Parse assembler code
     var hexString = pasm.parse('mov ax, 0x4c00');
-    console.log(hexString);
+    console.log(hexString.data);
 
 </script>
 ```
