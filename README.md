@@ -16,7 +16,7 @@ Piston X86-64 Assembler (PASM) is NASM syntax based symbolic machine code compil
 ## Todo
 
 * It works          <-- We are here
-* Floating point instructions, rep, segment prefixes, MMX, ...
+* Floating point instructions, rep, segment prefixes, MMX, macros, ...
 
 ## Download and install
 
