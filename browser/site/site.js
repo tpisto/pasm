@@ -80,7 +80,7 @@
         if ((code.modrm != null) && code.modrm.length > 0) {
           $(".modrm").show();
           modrm = parseInt('0x' + code.modrm).toString(2);
-          for (i = _m = _ref2 = modrm.length; _ref2 <= 7 ? _m <= 7 : _m >= 7; i = _ref2 <= 7 ? ++_m : --_m) {
+          for (i = _m = _ref2 = modrm.length; _ref2 <= 8 ? _m < 8 : _m > 8; i = _ref2 <= 8 ? ++_m : --_m) {
             modrm = "0" + modrm;
           }
           ret = '';

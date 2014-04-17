@@ -64,7 +64,7 @@ $ ->
       if code.modrm? && code.modrm.length > 0
         $(".modrm").show()
         modrm = parseInt('0x'+code.modrm).toString(2)
-        for i in [modrm.length..7]
+        for i in [modrm.length...8]
           modrm = "0" + modrm
         ret = ''
         for m in [0..7]
